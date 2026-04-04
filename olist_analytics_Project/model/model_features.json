@@ -1,0 +1,1 @@
+["approval_delay_hours", "purchase_hour", "purchase_dayofweek", "purchase_month", "is_weekend_purchase", "num_items", "total_price", "total_freight", "freight_ratio", "num_sellers", "avg_item_price", "avg_weight_g", "avg_volume_cm3", "payment_installments", "payment_value", "same_state_delivery", "seller_historical_late_rate"]
