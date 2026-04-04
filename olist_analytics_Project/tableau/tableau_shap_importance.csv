@@ -1,0 +1,18 @@
+feature,mean_abs_shap,mean_signed_shap,direction,rank,feature_label
+seller_historical_late_rate,1.103365463733782,0.1410408069244415,Increases Late Risk,1,Seller Historical Late Rate
+purchase_month,0.3689423380728102,-0.024203666364002,Reduces Late Risk,2,Purchase Month
+same_state_delivery,0.1390751199507942,0.0069676228640125,Increases Late Risk,3,Same State Delivery
+total_freight,0.133519101909143,-0.011927601203361,Reduces Late Risk,4,Total Freight
+approval_delay_hours,0.1212754435728141,0.0067676905958867,Increases Late Risk,5,Approval Delay Hours
+num_items,0.0634435105667295,-0.0056650314014759,Reduces Late Risk,6,Num Items
+purchase_dayofweek,0.0578291089086208,0.0004520733994301,Increases Late Risk,7,Purchase Dayofweek
+num_sellers,0.0450842355159627,0.0029041373198827,Increases Late Risk,8,Num Sellers
+purchase_hour,0.0417262274480332,-0.0024953555219082,Reduces Late Risk,9,Purchase Hour
+payment_installments,0.0342831024294412,0.0033008730753201,Increases Late Risk,10,Payment Installments
+freight_ratio,0.0240732383534588,-0.0035914133303124,Reduces Late Risk,11,Freight Ratio
+total_price,0.0207685695891555,-0.0060399770578235,Reduces Late Risk,12,Total Price
+payment_value,0.0186662327552561,0.0027736303509042,Increases Late Risk,13,Payment Value
+avg_weight_g,0.0179926873422311,0.00622500812481,Increases Late Risk,14,Avg. Weight G
+avg_volume_cm3,0.0156624596718922,-0.0013179122897674,Reduces Late Risk,15,Avg. Volume Cm3
+avg_item_price,0.0146373940386567,-0.0038002062457547,Reduces Late Risk,16,Avg. Item Price
+is_weekend_purchase,0.0045033215101994,8.443099714908471e-05,Increases Late Risk,17,Is Weekend Purchase
