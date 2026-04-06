@@ -1,0 +1,2890 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook source-build='0.0.0 (0000.25.1204.2135)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.ExplainData_AuthorControls.true...ExplainData_AuthorControls />
+    <_.fcp.ExplainData_NullValueExplanation.true...ExplainData_NullValueExplanation />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VizInTooltipHideWorksheet />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-on' />
+      <format attr='animation-duration' value='0.69999998807907104' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+  <datasource caption='Orders Overview' inline='true' name='federated.orders' version='18.1'>
+    <connection class='federated'>
+      <named-connections>
+        <named-connection caption='Orders Overview' name='textscan.2a327a650014586ba5d80f696ea0ecf1'>
+          <connection class='textscan' directory='C:/Users/alano/Desktop/winter 2026/Business Analytics/olist_analytics_Project/tableau' filename='tableau_orders_overview.csv' password='' server='' />
+        </named-connection>
+      </named-connections>
+      <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.2a327a650014586ba5d80f696ea0ecf1' name='tableau_orders_overview.csv' table='[tableau_orders_overview#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='datetime' name='order_purchase_timestamp' ordinal='1' />
+            <column datatype='datetime' name='order_delivered_customer_date' ordinal='2' />
+            <column datatype='datetime' name='order_estimated_delivery_date' ordinal='3' />
+            <column datatype='real' name='delivery_days' ordinal='4' />
+            <column datatype='integer' name='is_late' ordinal='5' />
+            <column datatype='string' name='customer_state' ordinal='6' />
+            <column datatype='string' name='seller_state' ordinal='7' />
+            <column datatype='integer' name='same_state_delivery' ordinal='8' />
+            <column datatype='real' name='total_price' ordinal='9' />
+            <column datatype='real' name='total_freight' ordinal='10' />
+            <column datatype='real' name='freight_ratio' ordinal='11' />
+            <column datatype='integer' name='num_items' ordinal='12' />
+            <column datatype='string' name='payment_type' ordinal='13' />
+            <column datatype='string' name='top_category' ordinal='14' />
+            <column datatype='real' name='seller_historical_late_rate' ordinal='15' />
+            <column datatype='real' name='approval_delay_hours' ordinal='16' />
+            <column datatype='string' name='year_month' ordinal='17' />
+            <column datatype='integer' name='order_year' ordinal='18' />
+            <column datatype='string' name='late_label' ordinal='19' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.2a327a650014586ba5d80f696ea0ecf1' name='tableau_orders_overview.csv' table='[tableau_orders_overview#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='datetime' name='order_purchase_timestamp' ordinal='1' />
+            <column datatype='datetime' name='order_delivered_customer_date' ordinal='2' />
+            <column datatype='datetime' name='order_estimated_delivery_date' ordinal='3' />
+            <column datatype='real' name='delivery_days' ordinal='4' />
+            <column datatype='integer' name='is_late' ordinal='5' />
+            <column datatype='string' name='customer_state' ordinal='6' />
+            <column datatype='string' name='seller_state' ordinal='7' />
+            <column datatype='integer' name='same_state_delivery' ordinal='8' />
+            <column datatype='real' name='total_price' ordinal='9' />
+            <column datatype='real' name='total_freight' ordinal='10' />
+            <column datatype='real' name='freight_ratio' ordinal='11' />
+            <column datatype='integer' name='num_items' ordinal='12' />
+            <column datatype='string' name='payment_type' ordinal='13' />
+            <column datatype='string' name='top_category' ordinal='14' />
+            <column datatype='real' name='seller_historical_late_rate' ordinal='15' />
+            <column datatype='real' name='approval_delay_hours' ordinal='16' />
+            <column datatype='string' name='year_month' ordinal='17' />
+            <column datatype='integer' name='order_year' ordinal='18' />
+            <column datatype='string' name='late_label' ordinal='19' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      <metadata-records>
+<metadata-record class='capability'>
+  <remote-name />
+  <remote-type>0</remote-type>
+  <parent-name>[tableau_orders_overview.csv]</parent-name>
+  <remote-alias />
+  <aggregation>Count</aggregation>
+  <contains-null>true</contains-null>
+  <attributes>
+    <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+    <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+    <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+    <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+  </attributes>
+</metadata-record>
+      <metadata-record class='column'>
+        <remote-name>order_id</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[order_id]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>order_id</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>order_purchase_timestamp</remote-name>
+        <remote-type>135</remote-type>
+        <local-name>[order_purchase_timestamp]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>order_purchase_timestamp</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>datetime</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>order_delivered_customer_date</remote-name>
+        <remote-type>135</remote-type>
+        <local-name>[order_delivered_customer_date]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>order_delivered_customer_date</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>datetime</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>order_estimated_delivery_date</remote-name>
+        <remote-type>135</remote-type>
+        <local-name>[order_estimated_delivery_date]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>order_estimated_delivery_date</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>datetime</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>delivery_days</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[delivery_days]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>delivery_days</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>is_late</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[is_late]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>is_late</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>customer_state</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[customer_state]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>customer_state</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>seller_state</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[seller_state]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>seller_state</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>same_state_delivery</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[same_state_delivery]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>same_state_delivery</remote-alias>
+        <ordinal>8</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>total_price</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[total_price]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>total_price</remote-alias>
+        <ordinal>9</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>total_freight</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[total_freight]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>total_freight</remote-alias>
+        <ordinal>10</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>freight_ratio</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[freight_ratio]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>freight_ratio</remote-alias>
+        <ordinal>11</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>num_items</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[num_items]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>num_items</remote-alias>
+        <ordinal>12</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>payment_type</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[payment_type]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>payment_type</remote-alias>
+        <ordinal>13</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>top_category</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[top_category]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>top_category</remote-alias>
+        <ordinal>14</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>seller_historical_late_rate</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[seller_historical_late_rate]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>seller_historical_late_rate</remote-alias>
+        <ordinal>15</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>approval_delay_hours</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[approval_delay_hours]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>approval_delay_hours</remote-alias>
+        <ordinal>16</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>year_month</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[year_month]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>year_month</remote-alias>
+        <ordinal>17</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>order_year</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[order_year]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>order_year</remote-alias>
+        <ordinal>18</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_label</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[late_label]</local-name>
+        <parent-name>[tableau_orders_overview.csv]</parent-name>
+        <remote-alias>late_label</remote-alias>
+        <ordinal>19</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      </metadata-records>
+    </connection>
+    <aliases enabled='yes' />
+  <column caption='Order ID' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+  <column caption='Purchase Timestamp' datatype='datetime' name='[order_purchase_timestamp]' role='dimension' type='nominal' />
+  <column caption='Delivered Date' datatype='datetime' name='[order_delivered_customer_date]' role='dimension' type='nominal' />
+  <column caption='Estimated Delivery Date' datatype='datetime' name='[order_estimated_delivery_date]' role='dimension' type='nominal' />
+  <column caption='Delivery Days' datatype='real' name='[delivery_days]' role='measure' type='quantitative' />
+  <column caption='Is Late (0/1)' datatype='integer' name='[is_late]' role='dimension' type='nominal' />
+  <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' type='nominal' />
+  <column caption='Seller State' datatype='string' name='[seller_state]' role='dimension' type='nominal' />
+  <column caption='Same State Delivery' datatype='integer' name='[same_state_delivery]' role='dimension' type='nominal' />
+  <column caption='Total Price' datatype='real' name='[total_price]' role='measure' type='quantitative' />
+  <column caption='Total Freight' datatype='real' name='[total_freight]' role='measure' type='quantitative' />
+  <column caption='Freight Ratio' datatype='real' name='[freight_ratio]' role='measure' type='quantitative' />
+  <column caption='Num Items' datatype='integer' name='[num_items]' role='measure' type='quantitative' />
+  <column caption='Payment Type' datatype='string' name='[payment_type]' role='dimension' type='nominal' />
+  <column caption='Product Category' datatype='string' name='[top_category]' role='dimension' type='nominal' />
+  <column caption='Seller Historical Late Rate' datatype='real' name='[seller_historical_late_rate]' role='measure' type='quantitative' />
+  <column caption='Approval Delay (hrs)' datatype='real' name='[approval_delay_hours]' role='measure' type='quantitative' />
+  <column caption='Year-Month' datatype='string' name='[year_month]' role='dimension' type='nominal' />
+  <column caption='Order Year' datatype='integer' name='[order_year]' role='dimension' type='nominal' />
+  <column caption='Delivery Status' datatype='string' name='[late_label]' role='dimension' type='nominal' />
+    <_.fcp.ObjectModelTableType.true...column caption='Orders Overview' datatype='table' name='[__tableau_internal_object_id__].[tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+      <objects>
+        <object caption='Orders Overview' id='tableau_orders_overview.csv_CB79B005BF285406B6E698E571746352'>
+          <properties context=''>
+            <relation connection='textscan.2a327a650014586ba5d80f696ea0ecf1' name='tableau_orders_overview.csv' table='[tableau_orders_overview#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='datetime' name='order_purchase_timestamp' ordinal='1' />
+            <column datatype='datetime' name='order_delivered_customer_date' ordinal='2' />
+            <column datatype='datetime' name='order_estimated_delivery_date' ordinal='3' />
+            <column datatype='real' name='delivery_days' ordinal='4' />
+            <column datatype='integer' name='is_late' ordinal='5' />
+            <column datatype='string' name='customer_state' ordinal='6' />
+            <column datatype='string' name='seller_state' ordinal='7' />
+            <column datatype='integer' name='same_state_delivery' ordinal='8' />
+            <column datatype='real' name='total_price' ordinal='9' />
+            <column datatype='real' name='total_freight' ordinal='10' />
+            <column datatype='real' name='freight_ratio' ordinal='11' />
+            <column datatype='integer' name='num_items' ordinal='12' />
+            <column datatype='string' name='payment_type' ordinal='13' />
+            <column datatype='string' name='top_category' ordinal='14' />
+            <column datatype='real' name='seller_historical_late_rate' ordinal='15' />
+            <column datatype='real' name='approval_delay_hours' ordinal='16' />
+            <column datatype='string' name='year_month' ordinal='17' />
+            <column datatype='integer' name='order_year' ordinal='18' />
+            <column datatype='string' name='late_label' ordinal='19' />
+              </columns>
+            </relation>
+          </properties>
+        </object>
+      </objects>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+  </datasource>
+  <datasource caption='Geographic Data' inline='true' name='federated.geographic' version='18.1'>
+    <connection class='federated'>
+      <named-connections>
+        <named-connection caption='Geographic Data' name='textscan.5cdfec6a920152e4b20f90831a93c14b'>
+          <connection class='textscan' directory='C:/Users/alano/Desktop/winter 2026/Business Analytics/olist_analytics_Project/tableau' filename='tableau_geographic.csv' password='' server='' />
+        </named-connection>
+      </named-connections>
+      <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.5cdfec6a920152e4b20f90831a93c14b' name='tableau_geographic.csv' table='[tableau_geographic#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customer_state' ordinal='0' />
+            <column datatype='integer' name='total_orders' ordinal='1' />
+            <column datatype='integer' name='late_orders' ordinal='2' />
+            <column datatype='real' name='late_rate' ordinal='3' />
+            <column datatype='real' name='avg_delivery_days' ordinal='4' />
+            <column datatype='real' name='avg_order_value' ordinal='5' />
+            <column datatype='real' name='late_rate_pct' ordinal='6' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.5cdfec6a920152e4b20f90831a93c14b' name='tableau_geographic.csv' table='[tableau_geographic#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customer_state' ordinal='0' />
+            <column datatype='integer' name='total_orders' ordinal='1' />
+            <column datatype='integer' name='late_orders' ordinal='2' />
+            <column datatype='real' name='late_rate' ordinal='3' />
+            <column datatype='real' name='avg_delivery_days' ordinal='4' />
+            <column datatype='real' name='avg_order_value' ordinal='5' />
+            <column datatype='real' name='late_rate_pct' ordinal='6' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      <metadata-records>
+<metadata-record class='capability'>
+  <remote-name />
+  <remote-type>0</remote-type>
+  <parent-name>[tableau_geographic.csv]</parent-name>
+  <remote-alias />
+  <aggregation>Count</aggregation>
+  <contains-null>true</contains-null>
+  <attributes>
+    <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+    <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+    <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+    <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+  </attributes>
+</metadata-record>
+      <metadata-record class='column'>
+        <remote-name>customer_state</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[customer_state]</local-name>
+        <parent-name>[tableau_geographic.csv]</parent-name>
+        <remote-alias>customer_state</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_geographic.csv_9C2517B6ADE45207B16D7222D61482E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>total_orders</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[total_orders]</local-name>
+        <parent-name>[tableau_geographic.csv]</parent-name>
+        <remote-alias>total_orders</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_geographic.csv_9C2517B6ADE45207B16D7222D61482E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_orders</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[late_orders]</local-name>
+        <parent-name>[tableau_geographic.csv]</parent-name>
+        <remote-alias>late_orders</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_geographic.csv_9C2517B6ADE45207B16D7222D61482E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_rate</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[late_rate]</local-name>
+        <parent-name>[tableau_geographic.csv]</parent-name>
+        <remote-alias>late_rate</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_geographic.csv_9C2517B6ADE45207B16D7222D61482E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_delivery_days</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_delivery_days]</local-name>
+        <parent-name>[tableau_geographic.csv]</parent-name>
+        <remote-alias>avg_delivery_days</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_geographic.csv_9C2517B6ADE45207B16D7222D61482E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_order_value</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_order_value]</local-name>
+        <parent-name>[tableau_geographic.csv]</parent-name>
+        <remote-alias>avg_order_value</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_geographic.csv_9C2517B6ADE45207B16D7222D61482E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_rate_pct</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[late_rate_pct]</local-name>
+        <parent-name>[tableau_geographic.csv]</parent-name>
+        <remote-alias>late_rate_pct</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_geographic.csv_9C2517B6ADE45207B16D7222D61482E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      </metadata-records>
+    </connection>
+    <aliases enabled='yes' />
+  <column caption='State' datatype='string' name='[customer_state]' role='dimension' type='nominal' />
+  <column caption='Total Orders' datatype='integer' name='[total_orders]' role='measure' type='quantitative' />
+  <column caption='Late Orders' datatype='integer' name='[late_orders]' role='measure' type='quantitative' />
+  <column caption='Late Rate' datatype='real' name='[late_rate]' role='measure' type='quantitative' />
+  <column caption='Avg Delivery Days' datatype='real' name='[avg_delivery_days]' role='measure' type='quantitative' />
+  <column caption='Avg Order Value' datatype='real' name='[avg_order_value]' role='measure' type='quantitative' />
+  <column caption='Late Rate %' datatype='real' name='[late_rate_pct]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelTableType.true...column caption='Geographic Data' datatype='table' name='[__tableau_internal_object_id__].[tableau_geographic.csv_9C2517B6ADE45207B16D7222D61482E0]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+      <objects>
+        <object caption='Geographic Data' id='tableau_geographic.csv_9C2517B6ADE45207B16D7222D61482E0'>
+          <properties context=''>
+            <relation connection='textscan.5cdfec6a920152e4b20f90831a93c14b' name='tableau_geographic.csv' table='[tableau_geographic#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customer_state' ordinal='0' />
+            <column datatype='integer' name='total_orders' ordinal='1' />
+            <column datatype='integer' name='late_orders' ordinal='2' />
+            <column datatype='real' name='late_rate' ordinal='3' />
+            <column datatype='real' name='avg_delivery_days' ordinal='4' />
+            <column datatype='real' name='avg_order_value' ordinal='5' />
+            <column datatype='real' name='late_rate_pct' ordinal='6' />
+              </columns>
+            </relation>
+          </properties>
+        </object>
+      </objects>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+  </datasource>
+  <datasource caption='Monthly Trends' inline='true' name='federated.monthly' version='18.1'>
+    <connection class='federated'>
+      <named-connections>
+        <named-connection caption='Monthly Trends' name='textscan.5802f5aa18605b619d4b033168932b47'>
+          <connection class='textscan' directory='C:/Users/alano/Desktop/winter 2026/Business Analytics/olist_analytics_Project/tableau' filename='tableau_monthly_trends.csv' password='' server='' />
+        </named-connection>
+      </named-connections>
+      <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.5802f5aa18605b619d4b033168932b47' name='tableau_monthly_trends.csv' table='[tableau_monthly_trends#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='ym' ordinal='1' />
+            <column datatype='integer' name='order_count' ordinal='2' />
+            <column datatype='integer' name='late_count' ordinal='3' />
+            <column datatype='real' name='late_rate' ordinal='4' />
+            <column datatype='real' name='total_revenue' ordinal='5' />
+            <column datatype='real' name='avg_delivery_days' ordinal='6' />
+            <column datatype='real' name='late_rate_pct' ordinal='7' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.5802f5aa18605b619d4b033168932b47' name='tableau_monthly_trends.csv' table='[tableau_monthly_trends#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='ym' ordinal='1' />
+            <column datatype='integer' name='order_count' ordinal='2' />
+            <column datatype='integer' name='late_count' ordinal='3' />
+            <column datatype='real' name='late_rate' ordinal='4' />
+            <column datatype='real' name='total_revenue' ordinal='5' />
+            <column datatype='real' name='avg_delivery_days' ordinal='6' />
+            <column datatype='real' name='late_rate_pct' ordinal='7' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      <metadata-records>
+<metadata-record class='capability'>
+  <remote-name />
+  <remote-type>0</remote-type>
+  <parent-name>[tableau_monthly_trends.csv]</parent-name>
+  <remote-alias />
+  <aggregation>Count</aggregation>
+  <contains-null>true</contains-null>
+  <attributes>
+    <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+    <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+    <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+    <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+  </attributes>
+</metadata-record>
+      <metadata-record class='column'>
+        <remote-name>date</remote-name>
+        <remote-type>91</remote-type>
+        <local-name>[date]</local-name>
+        <parent-name>[tableau_monthly_trends.csv]</parent-name>
+        <remote-alias>date</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>ym</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[ym]</local-name>
+        <parent-name>[tableau_monthly_trends.csv]</parent-name>
+        <remote-alias>ym</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>order_count</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[order_count]</local-name>
+        <parent-name>[tableau_monthly_trends.csv]</parent-name>
+        <remote-alias>order_count</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_count</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[late_count]</local-name>
+        <parent-name>[tableau_monthly_trends.csv]</parent-name>
+        <remote-alias>late_count</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_rate</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[late_rate]</local-name>
+        <parent-name>[tableau_monthly_trends.csv]</parent-name>
+        <remote-alias>late_rate</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>total_revenue</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[total_revenue]</local-name>
+        <parent-name>[tableau_monthly_trends.csv]</parent-name>
+        <remote-alias>total_revenue</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_delivery_days</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_delivery_days]</local-name>
+        <parent-name>[tableau_monthly_trends.csv]</parent-name>
+        <remote-alias>avg_delivery_days</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_rate_pct</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[late_rate_pct]</local-name>
+        <parent-name>[tableau_monthly_trends.csv]</parent-name>
+        <remote-alias>late_rate_pct</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      </metadata-records>
+    </connection>
+    <aliases enabled='yes' />
+  <column caption='Date' datatype='date' name='[date]' role='dimension' type='nominal' />
+  <column caption='Year-Month (String)' datatype='string' name='[ym]' role='dimension' type='nominal' />
+  <column caption='Order Count' datatype='integer' name='[order_count]' role='measure' type='quantitative' />
+  <column caption='Late Orders' datatype='integer' name='[late_count]' role='measure' type='quantitative' />
+  <column caption='Late Rate' datatype='real' name='[late_rate]' role='measure' type='quantitative' />
+  <column caption='Total Revenue' datatype='real' name='[total_revenue]' role='measure' type='quantitative' />
+  <column caption='Avg Delivery Days' datatype='real' name='[avg_delivery_days]' role='measure' type='quantitative' />
+  <column caption='Late Rate %' datatype='real' name='[late_rate_pct]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelTableType.true...column caption='Monthly Trends' datatype='table' name='[__tableau_internal_object_id__].[tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+      <objects>
+        <object caption='Monthly Trends' id='tableau_monthly_trends.csv_A0470B8544185EECBB59C5248F9A2201'>
+          <properties context=''>
+            <relation connection='textscan.5802f5aa18605b619d4b033168932b47' name='tableau_monthly_trends.csv' table='[tableau_monthly_trends#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='ym' ordinal='1' />
+            <column datatype='integer' name='order_count' ordinal='2' />
+            <column datatype='integer' name='late_count' ordinal='3' />
+            <column datatype='real' name='late_rate' ordinal='4' />
+            <column datatype='real' name='total_revenue' ordinal='5' />
+            <column datatype='real' name='avg_delivery_days' ordinal='6' />
+            <column datatype='real' name='late_rate_pct' ordinal='7' />
+              </columns>
+            </relation>
+          </properties>
+        </object>
+      </objects>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+  </datasource>
+  <datasource caption='Category Analysis' inline='true' name='federated.category' version='18.1'>
+    <connection class='federated'>
+      <named-connections>
+        <named-connection caption='Category Analysis' name='textscan.5fa24e0183285211b54a7b72fc339014'>
+          <connection class='textscan' directory='C:/Users/alano/Desktop/winter 2026/Business Analytics/olist_analytics_Project/tableau' filename='tableau_category_analysis.csv' password='' server='' />
+        </named-connection>
+      </named-connections>
+      <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.5fa24e0183285211b54a7b72fc339014' name='tableau_category_analysis.csv' table='[tableau_category_analysis#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='top_category' ordinal='0' />
+            <column datatype='integer' name='order_count' ordinal='1' />
+            <column datatype='integer' name='late_count' ordinal='2' />
+            <column datatype='real' name='late_rate' ordinal='3' />
+            <column datatype='real' name='avg_price' ordinal='4' />
+            <column datatype='real' name='avg_delivery_days' ordinal='5' />
+            <column datatype='real' name='avg_weight' ordinal='6' />
+            <column datatype='real' name='late_rate_pct' ordinal='7' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.5fa24e0183285211b54a7b72fc339014' name='tableau_category_analysis.csv' table='[tableau_category_analysis#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='top_category' ordinal='0' />
+            <column datatype='integer' name='order_count' ordinal='1' />
+            <column datatype='integer' name='late_count' ordinal='2' />
+            <column datatype='real' name='late_rate' ordinal='3' />
+            <column datatype='real' name='avg_price' ordinal='4' />
+            <column datatype='real' name='avg_delivery_days' ordinal='5' />
+            <column datatype='real' name='avg_weight' ordinal='6' />
+            <column datatype='real' name='late_rate_pct' ordinal='7' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      <metadata-records>
+<metadata-record class='capability'>
+  <remote-name />
+  <remote-type>0</remote-type>
+  <parent-name>[tableau_category_analysis.csv]</parent-name>
+  <remote-alias />
+  <aggregation>Count</aggregation>
+  <contains-null>true</contains-null>
+  <attributes>
+    <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+    <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+    <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+    <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+  </attributes>
+</metadata-record>
+      <metadata-record class='column'>
+        <remote-name>top_category</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[top_category]</local-name>
+        <parent-name>[tableau_category_analysis.csv]</parent-name>
+        <remote-alias>top_category</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>order_count</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[order_count]</local-name>
+        <parent-name>[tableau_category_analysis.csv]</parent-name>
+        <remote-alias>order_count</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_count</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[late_count]</local-name>
+        <parent-name>[tableau_category_analysis.csv]</parent-name>
+        <remote-alias>late_count</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_rate</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[late_rate]</local-name>
+        <parent-name>[tableau_category_analysis.csv]</parent-name>
+        <remote-alias>late_rate</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_price</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_price]</local-name>
+        <parent-name>[tableau_category_analysis.csv]</parent-name>
+        <remote-alias>avg_price</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_delivery_days</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_delivery_days]</local-name>
+        <parent-name>[tableau_category_analysis.csv]</parent-name>
+        <remote-alias>avg_delivery_days</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_weight</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_weight]</local-name>
+        <parent-name>[tableau_category_analysis.csv]</parent-name>
+        <remote-alias>avg_weight</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_rate_pct</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[late_rate_pct]</local-name>
+        <parent-name>[tableau_category_analysis.csv]</parent-name>
+        <remote-alias>late_rate_pct</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      </metadata-records>
+    </connection>
+    <aliases enabled='yes' />
+  <column caption='Product Category' datatype='string' name='[top_category]' role='dimension' type='nominal' />
+  <column caption='Order Count' datatype='integer' name='[order_count]' role='measure' type='quantitative' />
+  <column caption='Late Orders' datatype='integer' name='[late_count]' role='measure' type='quantitative' />
+  <column caption='Late Rate' datatype='real' name='[late_rate]' role='measure' type='quantitative' />
+  <column caption='Avg Price' datatype='real' name='[avg_price]' role='measure' type='quantitative' />
+  <column caption='Avg Delivery Days' datatype='real' name='[avg_delivery_days]' role='measure' type='quantitative' />
+  <column caption='Avg Weight (g)' datatype='real' name='[avg_weight]' role='measure' type='quantitative' />
+  <column caption='Late Rate %' datatype='real' name='[late_rate_pct]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelTableType.true...column caption='Category Analysis' datatype='table' name='[__tableau_internal_object_id__].[tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+      <objects>
+        <object caption='Category Analysis' id='tableau_category_analysis.csv_E463AA531D74560099788D3EAFE358D8'>
+          <properties context=''>
+            <relation connection='textscan.5fa24e0183285211b54a7b72fc339014' name='tableau_category_analysis.csv' table='[tableau_category_analysis#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='top_category' ordinal='0' />
+            <column datatype='integer' name='order_count' ordinal='1' />
+            <column datatype='integer' name='late_count' ordinal='2' />
+            <column datatype='real' name='late_rate' ordinal='3' />
+            <column datatype='real' name='avg_price' ordinal='4' />
+            <column datatype='real' name='avg_delivery_days' ordinal='5' />
+            <column datatype='real' name='avg_weight' ordinal='6' />
+            <column datatype='real' name='late_rate_pct' ordinal='7' />
+              </columns>
+            </relation>
+          </properties>
+        </object>
+      </objects>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+  </datasource>
+  <datasource caption='Model Predictions' inline='true' name='federated.predictions' version='18.1'>
+    <connection class='federated'>
+      <named-connections>
+        <named-connection caption='Model Predictions' name='textscan.5031b865cdd95488a0f41bde3a1ff5d5'>
+          <connection class='textscan' directory='C:/Users/alano/Desktop/winter 2026/Business Analytics/olist_analytics_Project/tableau' filename='tableau_model_predictions.csv' password='' server='' />
+        </named-connection>
+      </named-connections>
+      <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.5031b865cdd95488a0f41bde3a1ff5d5' name='tableau_model_predictions.csv' table='[tableau_model_predictions#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='approval_delay_hours' ordinal='0' />
+            <column datatype='real' name='purchase_hour' ordinal='1' />
+            <column datatype='real' name='purchase_dayofweek' ordinal='2' />
+            <column datatype='real' name='purchase_month' ordinal='3' />
+            <column datatype='integer' name='is_weekend_purchase' ordinal='4' />
+            <column datatype='integer' name='num_items' ordinal='5' />
+            <column datatype='real' name='total_price' ordinal='6' />
+            <column datatype='real' name='total_freight' ordinal='7' />
+            <column datatype='real' name='freight_ratio' ordinal='8' />
+            <column datatype='integer' name='num_sellers' ordinal='9' />
+            <column datatype='real' name='avg_item_price' ordinal='10' />
+            <column datatype='real' name='avg_weight_g' ordinal='11' />
+            <column datatype='real' name='avg_volume_cm3' ordinal='12' />
+            <column datatype='real' name='payment_installments' ordinal='13' />
+            <column datatype='real' name='payment_value' ordinal='14' />
+            <column datatype='integer' name='same_state_delivery' ordinal='15' />
+            <column datatype='real' name='seller_historical_late_rate' ordinal='16' />
+            <column datatype='integer' name='actual_is_late' ordinal='17' />
+            <column datatype='real' name='late_probability' ordinal='18' />
+            <column datatype='integer' name='predicted_is_late' ordinal='19' />
+            <column datatype='integer' name='correct' ordinal='20' />
+            <column datatype='string' name='risk_tier' ordinal='21' />
+            <column datatype='integer' name='risk_tier_order' ordinal='22' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.5031b865cdd95488a0f41bde3a1ff5d5' name='tableau_model_predictions.csv' table='[tableau_model_predictions#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='approval_delay_hours' ordinal='0' />
+            <column datatype='real' name='purchase_hour' ordinal='1' />
+            <column datatype='real' name='purchase_dayofweek' ordinal='2' />
+            <column datatype='real' name='purchase_month' ordinal='3' />
+            <column datatype='integer' name='is_weekend_purchase' ordinal='4' />
+            <column datatype='integer' name='num_items' ordinal='5' />
+            <column datatype='real' name='total_price' ordinal='6' />
+            <column datatype='real' name='total_freight' ordinal='7' />
+            <column datatype='real' name='freight_ratio' ordinal='8' />
+            <column datatype='integer' name='num_sellers' ordinal='9' />
+            <column datatype='real' name='avg_item_price' ordinal='10' />
+            <column datatype='real' name='avg_weight_g' ordinal='11' />
+            <column datatype='real' name='avg_volume_cm3' ordinal='12' />
+            <column datatype='real' name='payment_installments' ordinal='13' />
+            <column datatype='real' name='payment_value' ordinal='14' />
+            <column datatype='integer' name='same_state_delivery' ordinal='15' />
+            <column datatype='real' name='seller_historical_late_rate' ordinal='16' />
+            <column datatype='integer' name='actual_is_late' ordinal='17' />
+            <column datatype='real' name='late_probability' ordinal='18' />
+            <column datatype='integer' name='predicted_is_late' ordinal='19' />
+            <column datatype='integer' name='correct' ordinal='20' />
+            <column datatype='string' name='risk_tier' ordinal='21' />
+            <column datatype='integer' name='risk_tier_order' ordinal='22' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      <metadata-records>
+<metadata-record class='capability'>
+  <remote-name />
+  <remote-type>0</remote-type>
+  <parent-name>[tableau_model_predictions.csv]</parent-name>
+  <remote-alias />
+  <aggregation>Count</aggregation>
+  <contains-null>true</contains-null>
+  <attributes>
+    <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+    <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+    <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+    <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+  </attributes>
+</metadata-record>
+      <metadata-record class='column'>
+        <remote-name>approval_delay_hours</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[approval_delay_hours]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>approval_delay_hours</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>purchase_hour</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[purchase_hour]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>purchase_hour</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>purchase_dayofweek</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[purchase_dayofweek]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>purchase_dayofweek</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>purchase_month</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[purchase_month]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>purchase_month</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>is_weekend_purchase</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[is_weekend_purchase]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>is_weekend_purchase</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>num_items</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[num_items]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>num_items</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>total_price</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[total_price]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>total_price</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>total_freight</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[total_freight]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>total_freight</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>freight_ratio</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[freight_ratio]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>freight_ratio</remote-alias>
+        <ordinal>8</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>num_sellers</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[num_sellers]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>num_sellers</remote-alias>
+        <ordinal>9</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_item_price</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_item_price]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>avg_item_price</remote-alias>
+        <ordinal>10</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_weight_g</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_weight_g]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>avg_weight_g</remote-alias>
+        <ordinal>11</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_volume_cm3</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_volume_cm3]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>avg_volume_cm3</remote-alias>
+        <ordinal>12</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>payment_installments</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[payment_installments]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>payment_installments</remote-alias>
+        <ordinal>13</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>payment_value</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[payment_value]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>payment_value</remote-alias>
+        <ordinal>14</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>same_state_delivery</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[same_state_delivery]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>same_state_delivery</remote-alias>
+        <ordinal>15</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>seller_historical_late_rate</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[seller_historical_late_rate]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>seller_historical_late_rate</remote-alias>
+        <ordinal>16</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>actual_is_late</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[actual_is_late]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>actual_is_late</remote-alias>
+        <ordinal>17</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_probability</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[late_probability]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>late_probability</remote-alias>
+        <ordinal>18</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>predicted_is_late</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[predicted_is_late]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>predicted_is_late</remote-alias>
+        <ordinal>19</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>correct</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[correct]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>correct</remote-alias>
+        <ordinal>20</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>risk_tier</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[risk_tier]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>risk_tier</remote-alias>
+        <ordinal>21</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>risk_tier_order</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[risk_tier_order]</local-name>
+        <parent-name>[tableau_model_predictions.csv]</parent-name>
+        <remote-alias>risk_tier_order</remote-alias>
+        <ordinal>22</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      </metadata-records>
+    </connection>
+    <aliases enabled='yes' />
+  <column caption='Approval Delay (hrs)' datatype='real' name='[approval_delay_hours]' role='measure' type='quantitative' />
+  <column caption='Purchase Hour' datatype='real' name='[purchase_hour]' role='measure' type='quantitative' />
+  <column caption='Purchase Day of Week' datatype='real' name='[purchase_dayofweek]' role='measure' type='quantitative' />
+  <column caption='Purchase Month' datatype='real' name='[purchase_month]' role='measure' type='quantitative' />
+  <column caption='Weekend Purchase' datatype='integer' name='[is_weekend_purchase]' role='dimension' type='nominal' />
+  <column caption='Num Items' datatype='integer' name='[num_items]' role='measure' type='quantitative' />
+  <column caption='Total Price' datatype='real' name='[total_price]' role='measure' type='quantitative' />
+  <column caption='Total Freight' datatype='real' name='[total_freight]' role='measure' type='quantitative' />
+  <column caption='Freight Ratio' datatype='real' name='[freight_ratio]' role='measure' type='quantitative' />
+  <column caption='Num Sellers' datatype='integer' name='[num_sellers]' role='measure' type='quantitative' />
+  <column caption='Avg Item Price' datatype='real' name='[avg_item_price]' role='measure' type='quantitative' />
+  <column caption='Avg Weight (g)' datatype='real' name='[avg_weight_g]' role='measure' type='quantitative' />
+  <column caption='Avg Volume (cm3)' datatype='real' name='[avg_volume_cm3]' role='measure' type='quantitative' />
+  <column caption='Payment Installments' datatype='real' name='[payment_installments]' role='measure' type='quantitative' />
+  <column caption='Payment Value' datatype='real' name='[payment_value]' role='measure' type='quantitative' />
+  <column caption='Same State Delivery' datatype='integer' name='[same_state_delivery]' role='dimension' type='nominal' />
+  <column caption='Seller Historical Late Rate' datatype='real' name='[seller_historical_late_rate]' role='measure' type='quantitative' />
+  <column caption='Actual Late' datatype='integer' name='[actual_is_late]' role='dimension' type='nominal' />
+  <column caption='Late Probability' datatype='real' name='[late_probability]' role='measure' type='quantitative' />
+  <column caption='Predicted Late' datatype='integer' name='[predicted_is_late]' role='dimension' type='nominal' />
+  <column caption='Correct Prediction' datatype='integer' name='[correct]' role='dimension' type='nominal' />
+  <column caption='Risk Tier' datatype='string' name='[risk_tier]' role='dimension' type='nominal' />
+  <column caption='Risk Tier Order' datatype='integer' name='[risk_tier_order]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelTableType.true...column caption='Model Predictions' datatype='table' name='[__tableau_internal_object_id__].[tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+      <objects>
+        <object caption='Model Predictions' id='tableau_model_predictions.csv_EB11DCADEC6B5FB2978EBDDB76572696'>
+          <properties context=''>
+            <relation connection='textscan.5031b865cdd95488a0f41bde3a1ff5d5' name='tableau_model_predictions.csv' table='[tableau_model_predictions#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='approval_delay_hours' ordinal='0' />
+            <column datatype='real' name='purchase_hour' ordinal='1' />
+            <column datatype='real' name='purchase_dayofweek' ordinal='2' />
+            <column datatype='real' name='purchase_month' ordinal='3' />
+            <column datatype='integer' name='is_weekend_purchase' ordinal='4' />
+            <column datatype='integer' name='num_items' ordinal='5' />
+            <column datatype='real' name='total_price' ordinal='6' />
+            <column datatype='real' name='total_freight' ordinal='7' />
+            <column datatype='real' name='freight_ratio' ordinal='8' />
+            <column datatype='integer' name='num_sellers' ordinal='9' />
+            <column datatype='real' name='avg_item_price' ordinal='10' />
+            <column datatype='real' name='avg_weight_g' ordinal='11' />
+            <column datatype='real' name='avg_volume_cm3' ordinal='12' />
+            <column datatype='real' name='payment_installments' ordinal='13' />
+            <column datatype='real' name='payment_value' ordinal='14' />
+            <column datatype='integer' name='same_state_delivery' ordinal='15' />
+            <column datatype='real' name='seller_historical_late_rate' ordinal='16' />
+            <column datatype='integer' name='actual_is_late' ordinal='17' />
+            <column datatype='real' name='late_probability' ordinal='18' />
+            <column datatype='integer' name='predicted_is_late' ordinal='19' />
+            <column datatype='integer' name='correct' ordinal='20' />
+            <column datatype='string' name='risk_tier' ordinal='21' />
+            <column datatype='integer' name='risk_tier_order' ordinal='22' />
+              </columns>
+            </relation>
+          </properties>
+        </object>
+      </objects>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+  </datasource>
+  <datasource caption='SHAP Feature Importance' inline='true' name='federated.shap' version='18.1'>
+    <connection class='federated'>
+      <named-connections>
+        <named-connection caption='SHAP Feature Importance' name='textscan.4c07f18b159b571f9e864003d45c8bc6'>
+          <connection class='textscan' directory='C:/Users/alano/Desktop/winter 2026/Business Analytics/olist_analytics_Project/tableau' filename='tableau_shap_importance.csv' password='' server='' />
+        </named-connection>
+      </named-connections>
+      <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.4c07f18b159b571f9e864003d45c8bc6' name='tableau_shap_importance.csv' table='[tableau_shap_importance#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='feature' ordinal='0' />
+            <column datatype='real' name='mean_abs_shap' ordinal='1' />
+            <column datatype='real' name='mean_signed_shap' ordinal='2' />
+            <column datatype='string' name='direction' ordinal='3' />
+            <column datatype='integer' name='rank' ordinal='4' />
+            <column datatype='string' name='feature_label' ordinal='5' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.4c07f18b159b571f9e864003d45c8bc6' name='tableau_shap_importance.csv' table='[tableau_shap_importance#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='feature' ordinal='0' />
+            <column datatype='real' name='mean_abs_shap' ordinal='1' />
+            <column datatype='real' name='mean_signed_shap' ordinal='2' />
+            <column datatype='string' name='direction' ordinal='3' />
+            <column datatype='integer' name='rank' ordinal='4' />
+            <column datatype='string' name='feature_label' ordinal='5' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      <metadata-records>
+<metadata-record class='capability'>
+  <remote-name />
+  <remote-type>0</remote-type>
+  <parent-name>[tableau_shap_importance.csv]</parent-name>
+  <remote-alias />
+  <aggregation>Count</aggregation>
+  <contains-null>true</contains-null>
+  <attributes>
+    <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+    <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+    <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+    <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+  </attributes>
+</metadata-record>
+      <metadata-record class='column'>
+        <remote-name>feature</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[feature]</local-name>
+        <parent-name>[tableau_shap_importance.csv]</parent-name>
+        <remote-alias>feature</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_shap_importance.csv_2D63431D3F3751F19B484DDCDB101B7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>mean_abs_shap</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[mean_abs_shap]</local-name>
+        <parent-name>[tableau_shap_importance.csv]</parent-name>
+        <remote-alias>mean_abs_shap</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_shap_importance.csv_2D63431D3F3751F19B484DDCDB101B7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>mean_signed_shap</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[mean_signed_shap]</local-name>
+        <parent-name>[tableau_shap_importance.csv]</parent-name>
+        <remote-alias>mean_signed_shap</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_shap_importance.csv_2D63431D3F3751F19B484DDCDB101B7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>direction</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[direction]</local-name>
+        <parent-name>[tableau_shap_importance.csv]</parent-name>
+        <remote-alias>direction</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_shap_importance.csv_2D63431D3F3751F19B484DDCDB101B7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>rank</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[rank]</local-name>
+        <parent-name>[tableau_shap_importance.csv]</parent-name>
+        <remote-alias>rank</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_shap_importance.csv_2D63431D3F3751F19B484DDCDB101B7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>feature_label</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[feature_label]</local-name>
+        <parent-name>[tableau_shap_importance.csv]</parent-name>
+        <remote-alias>feature_label</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_shap_importance.csv_2D63431D3F3751F19B484DDCDB101B7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      </metadata-records>
+    </connection>
+    <aliases enabled='yes' />
+  <column caption='Feature (Raw)' datatype='string' name='[feature]' role='dimension' type='nominal' />
+  <column caption='Mean |SHAP|' datatype='real' name='[mean_abs_shap]' role='measure' type='quantitative' />
+  <column caption='Mean Signed SHAP' datatype='real' name='[mean_signed_shap]' role='measure' type='quantitative' />
+  <column caption='Impact Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+  <column caption='Rank' datatype='integer' name='[rank]' role='measure' type='quantitative' />
+  <column caption='Feature' datatype='string' name='[feature_label]' role='dimension' type='nominal' />
+    <_.fcp.ObjectModelTableType.true...column caption='SHAP Feature Importance' datatype='table' name='[__tableau_internal_object_id__].[tableau_shap_importance.csv_2D63431D3F3751F19B484DDCDB101B7B]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+      <objects>
+        <object caption='SHAP Feature Importance' id='tableau_shap_importance.csv_2D63431D3F3751F19B484DDCDB101B7B'>
+          <properties context=''>
+            <relation connection='textscan.4c07f18b159b571f9e864003d45c8bc6' name='tableau_shap_importance.csv' table='[tableau_shap_importance#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='feature' ordinal='0' />
+            <column datatype='real' name='mean_abs_shap' ordinal='1' />
+            <column datatype='real' name='mean_signed_shap' ordinal='2' />
+            <column datatype='string' name='direction' ordinal='3' />
+            <column datatype='integer' name='rank' ordinal='4' />
+            <column datatype='string' name='feature_label' ordinal='5' />
+              </columns>
+            </relation>
+          </properties>
+        </object>
+      </objects>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+  </datasource>
+  <datasource caption='Fairness by Region' inline='true' name='federated.fairness' version='18.1'>
+    <connection class='federated'>
+      <named-connections>
+        <named-connection caption='Fairness by Region' name='textscan.46115d0bf73d50a2be965da0826e79d8'>
+          <connection class='textscan' directory='C:/Users/alano/Desktop/winter 2026/Business Analytics/olist_analytics_Project/tableau' filename='tableau_fairness.csv' password='' server='' />
+        </named-connection>
+      </named-connections>
+      <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.46115d0bf73d50a2be965da0826e79d8' name='tableau_fairness.csv' table='[tableau_fairness#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='region' ordinal='0' />
+            <column datatype='integer' name='n_orders' ordinal='1' />
+            <column datatype='real' name='actual_late_pct' ordinal='2' />
+            <column datatype='real' name='pred_late_pct' ordinal='3' />
+            <column datatype='real' name='f1' ordinal='4' />
+            <column datatype='real' name='precision' ordinal='5' />
+            <column datatype='real' name='recall' ordinal='6' />
+            <column datatype='real' name='roc_auc' ordinal='7' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.46115d0bf73d50a2be965da0826e79d8' name='tableau_fairness.csv' table='[tableau_fairness#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='region' ordinal='0' />
+            <column datatype='integer' name='n_orders' ordinal='1' />
+            <column datatype='real' name='actual_late_pct' ordinal='2' />
+            <column datatype='real' name='pred_late_pct' ordinal='3' />
+            <column datatype='real' name='f1' ordinal='4' />
+            <column datatype='real' name='precision' ordinal='5' />
+            <column datatype='real' name='recall' ordinal='6' />
+            <column datatype='real' name='roc_auc' ordinal='7' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      <metadata-records>
+<metadata-record class='capability'>
+  <remote-name />
+  <remote-type>0</remote-type>
+  <parent-name>[tableau_fairness.csv]</parent-name>
+  <remote-alias />
+  <aggregation>Count</aggregation>
+  <contains-null>true</contains-null>
+  <attributes>
+    <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+    <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+    <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+    <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+  </attributes>
+</metadata-record>
+      <metadata-record class='column'>
+        <remote-name>region</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[region]</local-name>
+        <parent-name>[tableau_fairness.csv]</parent-name>
+        <remote-alias>region</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>n_orders</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[n_orders]</local-name>
+        <parent-name>[tableau_fairness.csv]</parent-name>
+        <remote-alias>n_orders</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>actual_late_pct</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[actual_late_pct]</local-name>
+        <parent-name>[tableau_fairness.csv]</parent-name>
+        <remote-alias>actual_late_pct</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>pred_late_pct</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[pred_late_pct]</local-name>
+        <parent-name>[tableau_fairness.csv]</parent-name>
+        <remote-alias>pred_late_pct</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>f1</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[f1]</local-name>
+        <parent-name>[tableau_fairness.csv]</parent-name>
+        <remote-alias>f1</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>precision</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[precision]</local-name>
+        <parent-name>[tableau_fairness.csv]</parent-name>
+        <remote-alias>precision</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>recall</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[recall]</local-name>
+        <parent-name>[tableau_fairness.csv]</parent-name>
+        <remote-alias>recall</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>roc_auc</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[roc_auc]</local-name>
+        <parent-name>[tableau_fairness.csv]</parent-name>
+        <remote-alias>roc_auc</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      </metadata-records>
+    </connection>
+    <aliases enabled='yes' />
+  <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+  <column caption='Orders in Test Set' datatype='integer' name='[n_orders]' role='measure' type='quantitative' />
+  <column caption='Actual Late %' datatype='real' name='[actual_late_pct]' role='measure' type='quantitative' />
+  <column caption='Predicted Late % (threshold 0.30)' datatype='real' name='[pred_late_pct]' role='measure' type='quantitative' />
+  <column caption='F1 Score' datatype='real' name='[f1]' role='measure' type='quantitative' />
+  <column caption='Precision' datatype='real' name='[precision]' role='measure' type='quantitative' />
+  <column caption='Recall' datatype='real' name='[recall]' role='measure' type='quantitative' />
+  <column caption='ROC-AUC' datatype='real' name='[roc_auc]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelTableType.true...column caption='Fairness by Region' datatype='table' name='[__tableau_internal_object_id__].[tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+      <objects>
+        <object caption='Fairness by Region' id='tableau_fairness.csv_365A9A32E8AC52DBA2523B7BE43F3AB6'>
+          <properties context=''>
+            <relation connection='textscan.46115d0bf73d50a2be965da0826e79d8' name='tableau_fairness.csv' table='[tableau_fairness#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='region' ordinal='0' />
+            <column datatype='integer' name='n_orders' ordinal='1' />
+            <column datatype='real' name='actual_late_pct' ordinal='2' />
+            <column datatype='real' name='pred_late_pct' ordinal='3' />
+            <column datatype='real' name='f1' ordinal='4' />
+            <column datatype='real' name='precision' ordinal='5' />
+            <column datatype='real' name='recall' ordinal='6' />
+            <column datatype='real' name='roc_auc' ordinal='7' />
+              </columns>
+            </relation>
+          </properties>
+        </object>
+      </objects>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+  </datasource>
+  <datasource caption='Payment Analysis' inline='true' name='federated.payment' version='18.1'>
+    <connection class='federated'>
+      <named-connections>
+        <named-connection caption='Payment Analysis' name='textscan.7aa13225a39758769a419ddb08a4c955'>
+          <connection class='textscan' directory='C:/Users/alano/Desktop/winter 2026/Business Analytics/olist_analytics_Project/tableau' filename='tableau_payment_analysis.csv' password='' server='' />
+        </named-connection>
+      </named-connections>
+      <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.7aa13225a39758769a419ddb08a4c955' name='tableau_payment_analysis.csv' table='[tableau_payment_analysis#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='payment_type' ordinal='0' />
+            <column datatype='integer' name='order_count' ordinal='1' />
+            <column datatype='real' name='late_rate' ordinal='2' />
+            <column datatype='real' name='avg_value' ordinal='3' />
+            <column datatype='real' name='avg_installments' ordinal='4' />
+            <column datatype='real' name='late_rate_pct' ordinal='5' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.7aa13225a39758769a419ddb08a4c955' name='tableau_payment_analysis.csv' table='[tableau_payment_analysis#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='payment_type' ordinal='0' />
+            <column datatype='integer' name='order_count' ordinal='1' />
+            <column datatype='real' name='late_rate' ordinal='2' />
+            <column datatype='real' name='avg_value' ordinal='3' />
+            <column datatype='real' name='avg_installments' ordinal='4' />
+            <column datatype='real' name='late_rate_pct' ordinal='5' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      <metadata-records>
+<metadata-record class='capability'>
+  <remote-name />
+  <remote-type>0</remote-type>
+  <parent-name>[tableau_payment_analysis.csv]</parent-name>
+  <remote-alias />
+  <aggregation>Count</aggregation>
+  <contains-null>true</contains-null>
+  <attributes>
+    <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+    <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+    <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+    <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+  </attributes>
+</metadata-record>
+      <metadata-record class='column'>
+        <remote-name>payment_type</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[payment_type]</local-name>
+        <parent-name>[tableau_payment_analysis.csv]</parent-name>
+        <remote-alias>payment_type</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_payment_analysis.csv_1909BD4C054C5A57A2A4B7D189D5E2A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>order_count</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[order_count]</local-name>
+        <parent-name>[tableau_payment_analysis.csv]</parent-name>
+        <remote-alias>order_count</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_payment_analysis.csv_1909BD4C054C5A57A2A4B7D189D5E2A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_rate</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[late_rate]</local-name>
+        <parent-name>[tableau_payment_analysis.csv]</parent-name>
+        <remote-alias>late_rate</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_payment_analysis.csv_1909BD4C054C5A57A2A4B7D189D5E2A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_value</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_value]</local-name>
+        <parent-name>[tableau_payment_analysis.csv]</parent-name>
+        <remote-alias>avg_value</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_payment_analysis.csv_1909BD4C054C5A57A2A4B7D189D5E2A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>avg_installments</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[avg_installments]</local-name>
+        <parent-name>[tableau_payment_analysis.csv]</parent-name>
+        <remote-alias>avg_installments</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_payment_analysis.csv_1909BD4C054C5A57A2A4B7D189D5E2A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_rate_pct</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[late_rate_pct]</local-name>
+        <parent-name>[tableau_payment_analysis.csv]</parent-name>
+        <remote-alias>late_rate_pct</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_payment_analysis.csv_1909BD4C054C5A57A2A4B7D189D5E2A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      </metadata-records>
+    </connection>
+    <aliases enabled='yes' />
+  <column caption='Payment Type' datatype='string' name='[payment_type]' role='dimension' type='nominal' />
+  <column caption='Order Count' datatype='integer' name='[order_count]' role='measure' type='quantitative' />
+  <column caption='Late Rate' datatype='real' name='[late_rate]' role='measure' type='quantitative' />
+  <column caption='Avg Order Value' datatype='real' name='[avg_value]' role='measure' type='quantitative' />
+  <column caption='Avg Installments' datatype='real' name='[avg_installments]' role='measure' type='quantitative' />
+  <column caption='Late Rate %' datatype='real' name='[late_rate_pct]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelTableType.true...column caption='Payment Analysis' datatype='table' name='[__tableau_internal_object_id__].[tableau_payment_analysis.csv_1909BD4C054C5A57A2A4B7D189D5E2A7]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+      <objects>
+        <object caption='Payment Analysis' id='tableau_payment_analysis.csv_1909BD4C054C5A57A2A4B7D189D5E2A7'>
+          <properties context=''>
+            <relation connection='textscan.7aa13225a39758769a419ddb08a4c955' name='tableau_payment_analysis.csv' table='[tableau_payment_analysis#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='payment_type' ordinal='0' />
+            <column datatype='integer' name='order_count' ordinal='1' />
+            <column datatype='real' name='late_rate' ordinal='2' />
+            <column datatype='real' name='avg_value' ordinal='3' />
+            <column datatype='real' name='avg_installments' ordinal='4' />
+            <column datatype='real' name='late_rate_pct' ordinal='5' />
+              </columns>
+            </relation>
+          </properties>
+        </object>
+      </objects>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+  </datasource>
+  <datasource caption='Review Impact' inline='true' name='federated.reviews' version='18.1'>
+    <connection class='federated'>
+      <named-connections>
+        <named-connection caption='Review Impact' name='textscan.76c2449e136b5814abadace1683e938c'>
+          <connection class='textscan' directory='C:/Users/alano/Desktop/winter 2026/Business Analytics/olist_analytics_Project/tableau' filename='tableau_review_impact.csv' password='' server='' />
+        </named-connection>
+      </named-connections>
+      <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.76c2449e136b5814abadace1683e938c' name='tableau_review_impact.csv' table='[tableau_review_impact#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='integer' name='is_late' ordinal='1' />
+            <column datatype='string' name='late_label' ordinal='2' />
+            <column datatype='integer' name='review_score' ordinal='3' />
+            <column datatype='real' name='delivery_days' ordinal='4' />
+            <column datatype='real' name='days_late' ordinal='5' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.76c2449e136b5814abadace1683e938c' name='tableau_review_impact.csv' table='[tableau_review_impact#csv]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='integer' name='is_late' ordinal='1' />
+            <column datatype='string' name='late_label' ordinal='2' />
+            <column datatype='integer' name='review_score' ordinal='3' />
+            <column datatype='real' name='delivery_days' ordinal='4' />
+            <column datatype='real' name='days_late' ordinal='5' />
+        </columns>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+      <metadata-records>
+<metadata-record class='capability'>
+  <remote-name />
+  <remote-type>0</remote-type>
+  <parent-name>[tableau_review_impact.csv]</parent-name>
+  <remote-alias />
+  <aggregation>Count</aggregation>
+  <contains-null>true</contains-null>
+  <attributes>
+    <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+    <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+    <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+    <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+    <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+  </attributes>
+</metadata-record>
+      <metadata-record class='column'>
+        <remote-name>order_id</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[order_id]</local-name>
+        <parent-name>[tableau_review_impact.csv]</parent-name>
+        <remote-alias>order_id</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_review_impact.csv_2C7F23F047CD525790264EEEC2CBD1B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>is_late</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[is_late]</local-name>
+        <parent-name>[tableau_review_impact.csv]</parent-name>
+        <remote-alias>is_late</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_review_impact.csv_2C7F23F047CD525790264EEEC2CBD1B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>late_label</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[late_label]</local-name>
+        <parent-name>[tableau_review_impact.csv]</parent-name>
+        <remote-alias>late_label</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+<scale>1</scale>
+<width>1073741823</width>
+<collation flag='0' name='LEN_RUS' />
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_review_impact.csv_2C7F23F047CD525790264EEEC2CBD1B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>review_score</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[review_score]</local-name>
+        <parent-name>[tableau_review_impact.csv]</parent-name>
+        <remote-alias>review_score</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_review_impact.csv_2C7F23F047CD525790264EEEC2CBD1B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>delivery_days</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[delivery_days]</local-name>
+        <parent-name>[tableau_review_impact.csv]</parent-name>
+        <remote-alias>delivery_days</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_review_impact.csv_2C7F23F047CD525790264EEEC2CBD1B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>days_late</remote-name>
+        <remote-type>8</remote-type>
+        <local-name>[days_late]</local-name>
+        <parent-name>[tableau_review_impact.csv]</parent-name>
+        <remote-alias>days_late</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+<_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tableau_review_impact.csv_2C7F23F047CD525790264EEEC2CBD1B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      </metadata-records>
+    </connection>
+    <aliases enabled='yes' />
+  <column caption='Order ID' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+  <column caption='Is Late (0/1)' datatype='integer' name='[is_late]' role='dimension' type='nominal' />
+  <column caption='Delivery Status' datatype='string' name='[late_label]' role='dimension' type='nominal' />
+  <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+  <column caption='Delivery Days' datatype='real' name='[delivery_days]' role='measure' type='quantitative' />
+  <column caption='Days Late (neg = early)' datatype='real' name='[days_late]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelTableType.true...column caption='Review Impact' datatype='table' name='[__tableau_internal_object_id__].[tableau_review_impact.csv_2C7F23F047CD525790264EEEC2CBD1B6]' role='measure' type='quantitative' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+      <objects>
+        <object caption='Review Impact' id='tableau_review_impact.csv_2C7F23F047CD525790264EEEC2CBD1B6'>
+          <properties context=''>
+            <relation connection='textscan.76c2449e136b5814abadace1683e938c' name='tableau_review_impact.csv' table='[tableau_review_impact#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='integer' name='is_late' ordinal='1' />
+            <column datatype='string' name='late_label' ordinal='2' />
+            <column datatype='integer' name='review_score' ordinal='3' />
+            <column datatype='real' name='delivery_days' ordinal='4' />
+            <column datatype='real' name='days_late' ordinal='5' />
+              </columns>
+            </relation>
+          </properties>
+        </object>
+      </objects>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+  </datasource>
+  </datasources>
+  <worksheets>
+<worksheet name='Late Rate Over Time'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Monthly Trends' name='federated.monthly' />
+      </datasources>
+      <datasource-dependencies datasource='federated.monthly'>
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='nominal' />
+        <column caption='Late Rate %' datatype='real' name='[late_rate_pct]' role='measure' type='quantitative' />
+        <column-instance column='[date]' derivation='None' name='[none:date:nk]' pivot='key' type='nominal' />
+        <column-instance column='[late_rate_pct]' derivation='Avg' name='[avg:late_rate_pct:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Automatic' />
+        <encodings>
+          <color column='[federated.monthly].[avg:late_rate_pct:qk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.monthly].[avg:late_rate_pct:qk]</rows>
+    <cols>[federated.monthly].[none:date:nk]</cols>
+  </table>
+  <simple-id uuid='{C7F35841-9D96-532C-B6C0-01DE18E684DF}' />
+</worksheet>
+<worksheet name='Monthly Order Volume'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Monthly Trends' name='federated.monthly' />
+      </datasources>
+      <datasource-dependencies datasource='federated.monthly'>
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='nominal' />
+        <column caption='Order Count' datatype='integer' name='[order_count]' role='measure' type='quantitative' />
+        <column-instance column='[date]' derivation='None' name='[none:date:nk]' pivot='key' type='nominal' />
+        <column-instance column='[order_count]' derivation='Sum' name='[sum:order_count:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Bar' />
+        <encodings>
+          <color column='[federated.monthly].[sum:order_count:qk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.monthly].[sum:order_count:qk]</rows>
+    <cols>[federated.monthly].[none:date:nk]</cols>
+  </table>
+  <simple-id uuid='{D84E20B4-A1F7-52FE-AA5F-44A3C4FF0D67}' />
+</worksheet>
+<worksheet name='Brazil State Map'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Geographic Data' name='federated.geographic' />
+      </datasources>
+      <datasource-dependencies datasource='federated.geographic'>
+        <column caption='State' datatype='string' name='[customer_state]' role='dimension' type='nominal' />
+        <column caption='Late Rate %' datatype='real' name='[late_rate_pct]' role='measure' type='quantitative' />
+        <column-instance column='[customer_state]' derivation='None' name='[none:customer_state:nk]' pivot='key' type='nominal' />
+        <column-instance column='[late_rate_pct]' derivation='Avg' name='[avg:late_rate_pct:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Bar' />
+        <encodings>
+          <color column='[federated.geographic].[avg:late_rate_pct:qk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.geographic].[none:customer_state:nk]</rows>
+    <cols>[federated.geographic].[avg:late_rate_pct:qk]</cols>
+  </table>
+  <simple-id uuid='{0B65CFB8-7F20-5ED5-AAD1-2753726CBF8F}' />
+</worksheet>
+<worksheet name='Payment Late Rate'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Payment Analysis' name='federated.payment' />
+      </datasources>
+      <datasource-dependencies datasource='federated.payment'>
+        <column caption='Late Rate %' datatype='real' name='[late_rate_pct]' role='measure' type='quantitative' />
+        <column caption='Payment Type' datatype='string' name='[payment_type]' role='dimension' type='nominal' />
+        <column-instance column='[late_rate_pct]' derivation='Avg' name='[avg:late_rate_pct:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[payment_type]' derivation='None' name='[none:payment_type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Bar' />
+        <encodings>
+          <color column='[federated.payment].[avg:late_rate_pct:qk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.payment].[none:payment_type:nk]</rows>
+    <cols>[federated.payment].[avg:late_rate_pct:qk]</cols>
+  </table>
+  <simple-id uuid='{B67CD297-17BC-5F70-BE48-4468401690E3}' />
+</worksheet>
+<worksheet name='Category Late Rate'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Category Analysis' name='federated.category' />
+      </datasources>
+      <datasource-dependencies datasource='federated.category'>
+        <column caption='Product Category' datatype='string' name='[top_category]' role='dimension' type='nominal' />
+        <column caption='Late Rate %' datatype='real' name='[late_rate_pct]' role='measure' type='quantitative' />
+        <column-instance column='[top_category]' derivation='None' name='[none:top_category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[late_rate_pct]' derivation='Avg' name='[avg:late_rate_pct:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Bar' />
+        <encodings>
+          <color column='[federated.category].[avg:late_rate_pct:qk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.category].[none:top_category:nk]</rows>
+    <cols>[federated.category].[avg:late_rate_pct:qk]</cols>
+  </table>
+  <simple-id uuid='{D9A77702-2A1A-50F9-99F1-1109762D4CC2}' />
+</worksheet>
+<worksheet name='Risk Tier Distribution'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Model Predictions' name='federated.predictions' />
+      </datasources>
+      <datasource-dependencies datasource='federated.predictions'>
+        <column caption='Risk Tier Order' datatype='integer' name='[risk_tier_order]' role='measure' type='quantitative' />
+        <column caption='Late Probability' datatype='real' name='[late_probability]' role='measure' type='quantitative' />
+        <column caption='Risk Tier' datatype='string' name='[risk_tier]' role='dimension' type='nominal' />
+        <column-instance column='[risk_tier_order]' derivation='None' name='[none:risk_tier_order:nk]' pivot='key' type='nominal' />
+        <column-instance column='[late_probability]' derivation='Count' name='[cnt:late_probability:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[risk_tier]' derivation='None' name='[none:risk_tier:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Bar' />
+        <encodings>
+          <color column='[federated.predictions].[none:risk_tier:nk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.predictions].[cnt:late_probability:qk]</rows>
+    <cols>[federated.predictions].[none:risk_tier_order:nk]</cols>
+  </table>
+  <simple-id uuid='{73286890-DE88-56D3-A541-F41E9D26DAC6}' />
+</worksheet>
+<worksheet name='High Risk Orders'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Model Predictions' name='federated.predictions' />
+      </datasources>
+      <datasource-dependencies datasource='federated.predictions'>
+        <column caption='Late Probability' datatype='real' name='[late_probability]' role='measure' type='quantitative' />
+        <column caption='Approval Delay (hrs)' datatype='real' name='[approval_delay_hours]' role='measure' type='quantitative' />
+        <column caption='Risk Tier' datatype='string' name='[risk_tier]' role='dimension' type='nominal' />
+        <column-instance column='[late_probability]' derivation='Avg' name='[avg:late_probability:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[approval_delay_hours]' derivation='Avg' name='[avg:approval_delay_hours:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[risk_tier]' derivation='None' name='[none:risk_tier:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Circle' />
+        <encodings>
+          <color column='[federated.predictions].[none:risk_tier:nk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.predictions].[avg:late_probability:qk]</rows>
+    <cols>[federated.predictions].[avg:approval_delay_hours:qk]</cols>
+  </table>
+  <simple-id uuid='{54C46DFB-F1B7-5A7F-9F79-D01F20C134C8}' />
+</worksheet>
+<worksheet name='Feature Importance (SHAP)'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='SHAP Feature Importance' name='federated.shap' />
+      </datasources>
+      <datasource-dependencies datasource='federated.shap'>
+        <column caption='Mean |SHAP|' datatype='real' name='[mean_abs_shap]' role='measure' type='quantitative' />
+        <column caption='Feature' datatype='string' name='[feature_label]' role='dimension' type='nominal' />
+        <column caption='Impact Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+        <column-instance column='[mean_abs_shap]' derivation='Avg' name='[avg:mean_abs_shap:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[feature_label]' derivation='None' name='[none:feature_label:nk]' pivot='key' type='nominal' />
+        <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Bar' />
+        <encodings>
+          <color column='[federated.shap].[none:direction:nk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.shap].[none:feature_label:nk]</rows>
+    <cols>[federated.shap].[avg:mean_abs_shap:qk]</cols>
+  </table>
+  <simple-id uuid='{B043AE3C-40BF-5B8F-8B69-B66443251A95}' />
+</worksheet>
+<worksheet name='Delivery Days Distribution'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Orders Overview' name='federated.orders' />
+      </datasources>
+      <datasource-dependencies datasource='federated.orders'>
+        <column caption='Delivery Status' datatype='string' name='[late_label]' role='dimension' type='nominal' />
+        <column caption='Delivery Days' datatype='real' name='[delivery_days]' role='measure' type='quantitative' />
+        <column-instance column='[late_label]' derivation='None' name='[none:late_label:nk]' pivot='key' type='nominal' />
+        <column-instance column='[delivery_days]' derivation='Avg' name='[avg:delivery_days:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Circle' />
+        <encodings>
+          <color column='[federated.orders].[none:late_label:nk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.orders].[none:late_label:nk]</rows>
+    <cols>[federated.orders].[avg:delivery_days:qk]</cols>
+  </table>
+  <simple-id uuid='{0BEFD722-B8DD-5DFA-B61B-9F784454BCEA}' />
+</worksheet>
+<worksheet name='Approval Delay Analysis'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Orders Overview' name='federated.orders' />
+      </datasources>
+      <datasource-dependencies datasource='federated.orders'>
+        <column caption='Delivery Status' datatype='string' name='[late_label]' role='dimension' type='nominal' />
+        <column caption='Approval Delay (hrs)' datatype='real' name='[approval_delay_hours]' role='measure' type='quantitative' />
+        <column-instance column='[late_label]' derivation='None' name='[none:late_label:nk]' pivot='key' type='nominal' />
+        <column-instance column='[approval_delay_hours]' derivation='Avg' name='[avg:approval_delay_hours:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Circle' />
+        <encodings>
+          <color column='[federated.orders].[none:late_label:nk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.orders].[none:late_label:nk]</rows>
+    <cols>[federated.orders].[avg:approval_delay_hours:qk]</cols>
+  </table>
+  <simple-id uuid='{6AB22984-E6E5-5081-A310-1816896BB688}' />
+</worksheet>
+<worksheet name='Review Score by Delivery'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Review Impact' name='federated.reviews' />
+      </datasources>
+      <datasource-dependencies datasource='federated.reviews'>
+        <column caption='Delivery Status' datatype='string' name='[late_label]' role='dimension' type='nominal' />
+        <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+        <column-instance column='[late_label]' derivation='None' name='[none:late_label:nk]' pivot='key' type='nominal' />
+        <column-instance column='[review_score]' derivation='Avg' name='[avg:review_score:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Bar' />
+        <encodings>
+          <color column='[federated.reviews].[none:late_label:nk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.reviews].[avg:review_score:qk]</rows>
+    <cols>[federated.reviews].[none:late_label:nk]</cols>
+  </table>
+  <simple-id uuid='{EF842C63-9E99-5DBB-9406-D9BCA4D0168A}' />
+</worksheet>
+<worksheet name='Days Late vs Review Score'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Review Impact' name='federated.reviews' />
+      </datasources>
+      <datasource-dependencies datasource='federated.reviews'>
+        <column caption='Days Late (neg = early)' datatype='real' name='[days_late]' role='measure' type='quantitative' />
+        <column caption='Review Score' datatype='integer' name='[review_score]' role='measure' type='quantitative' />
+        <column-instance column='[days_late]' derivation='Avg' name='[avg:days_late:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[review_score]' derivation='Avg' name='[avg:review_score:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Circle' />
+        <encodings>
+          <color column='[federated.reviews].[avg:review_score:qk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.reviews].[avg:review_score:qk]</rows>
+    <cols>[federated.reviews].[avg:days_late:qk]</cols>
+  </table>
+  <simple-id uuid='{2A75C3AF-2991-5C3C-BCBB-7C64E71855F8}' />
+</worksheet>
+<worksheet name='Model Fairness Actual'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Fairness by Region' name='federated.fairness' />
+      </datasources>
+      <datasource-dependencies datasource='federated.fairness'>
+        <column caption='Actual Late %' datatype='real' name='[actual_late_pct]' role='measure' type='quantitative' />
+        <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+        <column-instance column='[actual_late_pct]' derivation='Avg' name='[avg:actual_late_pct:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Bar' />
+        <encodings>
+          <color column='[federated.fairness].[none:region:nk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.fairness].[none:region:nk]</rows>
+    <cols>[federated.fairness].[avg:actual_late_pct:qk]</cols>
+  </table>
+  <simple-id uuid='{B7E0F424-49F7-534C-B44A-652674BBA141}' />
+</worksheet>
+<worksheet name='Model Fairness Predicted'>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Fairness by Region' name='federated.fairness' />
+      </datasources>
+      <datasource-dependencies datasource='federated.fairness'>
+        <column caption='Predicted Late % (threshold 0.30)' datatype='real' name='[pred_late_pct]' role='measure' type='quantitative' />
+        <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+        <column-instance column='[pred_late_pct]' derivation='Avg' name='[avg:pred_late_pct:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <aggregation value='true' />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Bar' />
+        <encodings>
+          <color column='[federated.fairness].[none:region:nk]' />
+        </encodings>
+      </pane>
+    </panes>
+    <rows>[federated.fairness].[none:region:nk]</rows>
+    <cols>[federated.fairness].[avg:pred_late_pct:qk]</cols>
+  </table>
+  <simple-id uuid='{7FE9248F-1E79-59CC-A708-706C984F4905}' />
+</worksheet>
+  </worksheets>
+  <dashboards>
+<dashboard name='1. Executive Overview'>
+  <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' />
+  <zones>
+    <zone h='100000' id='208' type-v2='layout-basic' w='100000' x='0' y='0'>
+      <zone h='100000' id='207' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+        <zone h='50000' id='203' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+          <zone h='50000' id='201' name='Late Rate Over Time' w='50000' x='0' y='0' />
+          <zone h='50000' id='202' name='Brazil State Map' w='50000' x='50000' y='0' />
+        </zone>
+        <zone h='50000' id='206' param='horz' type-v2='layout-flow' w='100000' x='0' y='50000'>
+          <zone h='50000' id='204' name='Monthly Order Volume' w='50000' x='0' y='0' />
+          <zone h='50000' id='205' name='Payment Late Rate' w='50000' x='50000' y='0' />
+        </zone>
+      </zone>
+    </zone>
+  </zones>
+  <simple-id uuid='{FAD05C8A-786B-54A9-B14E-6AA7C5366D73}' />
+</dashboard>
+<dashboard name='2. Operational Risk Monitor'>
+  <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' />
+  <zones>
+    <zone h='100000' id='215' type-v2='layout-basic' w='100000' x='0' y='0'>
+      <zone h='100000' id='214' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+        <zone h='50000' id='211' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+          <zone h='50000' id='209' name='Category Late Rate' w='66666' x='0' y='0' />
+          <zone h='50000' id='210' name='Risk Tier Distribution' w='33333' x='66666' y='0' />
+        </zone>
+        <zone h='50000' id='213' param='horz' type-v2='layout-flow' w='100000' x='0' y='50000'>
+          <zone h='50000' id='212' name='High Risk Orders' w='100000' x='0' y='0' />
+        </zone>
+      </zone>
+    </zone>
+  </zones>
+  <simple-id uuid='{DFFEBAA7-F860-5F6A-8C32-9951F048C6F8}' />
+</dashboard>
+<dashboard name='3. Root Cause Analysis'>
+  <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' />
+  <zones>
+    <zone h='100000' id='222' type-v2='layout-basic' w='100000' x='0' y='0'>
+      <zone h='100000' id='221' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+        <zone h='50000' id='217' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+          <zone h='50000' id='216' name='Feature Importance (SHAP)' w='100000' x='0' y='0' />
+        </zone>
+        <zone h='50000' id='220' param='horz' type-v2='layout-flow' w='100000' x='0' y='50000'>
+          <zone h='50000' id='218' name='Delivery Days Distribution' w='50000' x='0' y='0' />
+          <zone h='50000' id='219' name='Approval Delay Analysis' w='50000' x='50000' y='0' />
+        </zone>
+      </zone>
+    </zone>
+  </zones>
+  <simple-id uuid='{BE5A1793-669E-5589-825F-21DEB13267BD}' />
+</dashboard>
+<dashboard name='4. Customer Experience'>
+  <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' />
+  <zones>
+    <zone h='100000' id='230' type-v2='layout-basic' w='100000' x='0' y='0'>
+      <zone h='100000' id='229' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+        <zone h='50000' id='225' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+          <zone h='50000' id='223' name='Review Score by Delivery' w='50000' x='0' y='0' />
+          <zone h='50000' id='224' name='Days Late vs Review Score' w='50000' x='50000' y='0' />
+        </zone>
+        <zone h='50000' id='228' param='horz' type-v2='layout-flow' w='100000' x='0' y='50000'>
+          <zone h='50000' id='226' name='Model Fairness Actual' w='50000' x='0' y='0' />
+          <zone h='50000' id='227' name='Model Fairness Predicted' w='50000' x='50000' y='0' />
+        </zone>
+      </zone>
+    </zone>
+  </zones>
+  <simple-id uuid='{521BFF69-F56C-5F13-B421-9AC32DBD7219}' />
+</dashboard>
+  </dashboards>
+  <windows source-height='72'>
+<window class='dashboard' maximized='true' name='1. Executive Overview'>
+  <viewpoints>
+    <viewpoint name='Late Rate Over Time' />
+    <viewpoint name='Brazil State Map' />
+    <viewpoint name='Monthly Order Volume' />
+    <viewpoint name='Payment Late Rate' />
+  </viewpoints>
+  <active id='-1' />
+  <simple-id uuid='{F6CBD794-1CD9-575A-B98D-FB85964360F8}' />
+</window>
+<window class='dashboard' name='2. Operational Risk Monitor'>
+  <viewpoints>
+    <viewpoint name='Category Late Rate' />
+    <viewpoint name='Risk Tier Distribution' />
+    <viewpoint name='High Risk Orders' />
+  </viewpoints>
+  <active id='-1' />
+  <simple-id uuid='{6365A187-6B18-5531-AB65-C019D91AD0DE}' />
+</window>
+<window class='dashboard' name='3. Root Cause Analysis'>
+  <viewpoints>
+    <viewpoint name='Feature Importance (SHAP)' />
+    <viewpoint name='Delivery Days Distribution' />
+    <viewpoint name='Approval Delay Analysis' />
+  </viewpoints>
+  <active id='-1' />
+  <simple-id uuid='{8307600B-271B-5C80-88EF-BFCFF4CF0FB4}' />
+</window>
+<window class='dashboard' name='4. Customer Experience'>
+  <viewpoints>
+    <viewpoint name='Review Score by Delivery' />
+    <viewpoint name='Days Late vs Review Score' />
+    <viewpoint name='Model Fairness Actual' />
+    <viewpoint name='Model Fairness Predicted' />
+  </viewpoints>
+  <active id='-1' />
+  <simple-id uuid='{075B9956-30E3-546D-B4BE-EDCCA4BE261C}' />
+</window>
+<window class='worksheet' hidden='true' name='Late Rate Over Time'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{AE0CBA34-4B0A-56E3-BFA3-80327B5F9C8E}' />
+</window>
+<window class='worksheet' hidden='true' name='Monthly Order Volume'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{BCA4110B-95D9-5403-8B6F-09A6935C3B90}' />
+</window>
+<window class='worksheet' hidden='true' name='Brazil State Map'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{74DE1ACF-BDBA-52CA-B6B0-8FBDC01E7622}' />
+</window>
+<window class='worksheet' hidden='true' name='Payment Late Rate'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{EA900D7E-F9A7-5C07-B981-BB8A1A097B7D}' />
+</window>
+<window class='worksheet' hidden='true' name='Category Late Rate'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{0CD97F92-0A31-5ADC-8E8B-0E217C267744}' />
+</window>
+<window class='worksheet' hidden='true' name='Risk Tier Distribution'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{4D56D87A-F586-5C06-AA8F-404C649A5A03}' />
+</window>
+<window class='worksheet' hidden='true' name='High Risk Orders'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{8D870016-FAFB-5822-8F52-44E05915ECA8}' />
+</window>
+<window class='worksheet' hidden='true' name='Feature Importance (SHAP)'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{717C743A-FD62-51B9-8F16-84025A3749E4}' />
+</window>
+<window class='worksheet' hidden='true' name='Delivery Days Distribution'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{3410F110-5B02-5BEB-A751-54B9D770CB3E}' />
+</window>
+<window class='worksheet' hidden='true' name='Approval Delay Analysis'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{BDD51277-88D9-5C02-B01E-4956DF3DBF67}' />
+</window>
+<window class='worksheet' hidden='true' name='Review Score by Delivery'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{4BEA8EF7-3CC1-539B-AF7A-B15457FB2C68}' />
+</window>
+<window class='worksheet' hidden='true' name='Days Late vs Review Score'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{4ACD1215-1566-5FC8-B279-E66A3FE2CAA7}' />
+</window>
+<window class='worksheet' hidden='true' name='Model Fairness Actual'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{4DA579FC-E00E-5331-A03F-1B913CFB8647}' />
+</window>
+<window class='worksheet' hidden='true' name='Model Fairness Predicted'>
+  <cards>
+    <edge name='left'>
+      <strip size='275'>
+        <card type='pages' />
+        <card type='filters' />
+        <card type='marks' />
+      </strip>
+    </edge>
+    <edge name='top'>
+      <strip size='2147483647'>
+        <card type='columns' />
+      </strip>
+      <strip size='2147483647'>
+        <card type='rows' />
+      </strip>
+      <strip size='8'>
+        <card type='title' />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid='{CE2477EB-1E33-5589-9612-4E2B8427C217}' />
+</window>
+  </windows>
+  <_.fcp.ExplainData_AuthorControls.true...explain-data enabled-for-viewer='false' extreme-values-enabled-for-all='false'>
+    <explanation-types>
+      <explanation-type enabled='true' type='number-of-records' />
+      <explanation-type enabled='true' type='average-of-records' />
+      <explanation-type enabled='true' type='aggregated-dimensions' />
+      <explanation-type enabled='true' type='distribution-of-records' />
+      <explanation-type enabled='true' type='unvisualized-measures' />
+      <explanation-type enabled='true' type='extreme-values' />
+      <_.fcp.ExplainData_NullValueExplanation.true...explanation-type enabled='true' type='null-value' />
+      <explanation-type enabled='true' type='tvd-single-value' />
+      <explanation-type enabled='true' type='ad-single-value' />
+    </explanation-types>
+  </_.fcp.ExplainData_AuthorControls.true...explain-data>
+</workbook>

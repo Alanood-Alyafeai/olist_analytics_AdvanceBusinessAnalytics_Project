@@ -1,0 +1,13 @@
+# Temp / lock files
+~$*
+*.tmp
+*.lock
+
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

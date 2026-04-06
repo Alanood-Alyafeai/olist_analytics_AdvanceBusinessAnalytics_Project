@@ -1,6 +1,0 @@
-region,n_orders,actual_late_pct,pred_late_pct,f1,precision,recall,roc_auc
-Center-West,1179,7.1,23.5,0.249,0.162,0.536,0.762
-North,355,10.1,30.4,0.347,0.231,0.694,0.763
-Northeast,1813,14.1,27.9,0.371,0.279,0.551,0.741
-South,2762,7.3,21.0,0.29,0.195,0.562,0.769
-Southeast,13185,7.5,16.6,0.339,0.246,0.545,0.797
