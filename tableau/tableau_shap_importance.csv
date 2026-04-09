@@ -1,18 +1,9 @@
-feature,mean_abs_shap,mean_signed_shap,direction
-seller_historical_late_rate,0.77349526,-0.36979765,Reduces Late Risk
-purchase_month,0.47405118,-0.19108643,Reduces Late Risk
-total_freight,0.16007647,-0.068909645,Reduces Late Risk
-same_state_delivery,0.15899502,-0.026863461,Reduces Late Risk
-approval_delay_hours,0.14380518,-0.043490134,Reduces Late Risk
-purchase_dayofweek,0.071639694,-0.015272905,Reduces Late Risk
-purchase_hour,0.057871923,-0.020696165,Reduces Late Risk
-num_items,0.055405352,-0.011079583,Reduces Late Risk
-avg_item_price,0.053674992,-0.023792963,Reduces Late Risk
-freight_ratio,0.0513414,-0.01661654,Reduces Late Risk
-avg_volume_cm3,0.04579852,-0.026687788,Reduces Late Risk
-payment_installments,0.037691906,-0.009214167,Reduces Late Risk
-avg_weight_g,0.036162827,-0.009867353,Reduces Late Risk
-total_price,0.034864463,-0.020161089,Reduces Late Risk
-num_sellers,0.028733892,-0.008951184,Reduces Late Risk
-payment_value,0.026343303,-0.010354599,Reduces Late Risk
-is_weekend_purchase,0.0042343047,9.850081e-06,Increases Late Risk
+"feature","mean_abs_shap","mean_signed_shap","direction","rank","feature_label"
+"seller_historical_late_rate","0.77349526","-0.36979765","Reduces Late Risk","1","1. Seller Historical Late Rate"
+"purchase_month","0.47405118","-0.19108643","Reduces Late Risk","2","2. Purchase Month"
+"total_freight","0.16007647","-0.068909645","Reduces Late Risk","3","3. Total Freight"
+"same_state_delivery","0.15899502","-0.026863461","Reduces Late Risk","4","4. Same State Delivery"
+"approval_delay_hours","0.14380518","-0.043490134","Reduces Late Risk","5","5. Approval Delay Hours"
+"purchase_dayofweek","0.071639694","-0.015272905","Reduces Late Risk","6","6. Purchase Day Of Week"
+"purchase_hour","0.057871923","-0.020696165","Reduces Late Risk","7","7. Purchase Hour"
+"num_items","0.055405352","-0.011079583","Reduces Late Risk","8","8. Num Items"
