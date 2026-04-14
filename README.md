@@ -94,8 +94,7 @@ print(preds[["late_probability", "risk_tier", "recommended_action"]])
 Or as a Flask service:
 
 ```bash
-python model/score.py --serve --port 5000
-# POST JSON order features to http://localhost:5000/predict
+-------------------
 ```
 
 ### 3. Open the Tableau dashboard
